@@ -1,0 +1,51 @@
+.textContainer {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.title {
+  font-family: "europa", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 24px;
+  color: #a0a0a0;
+}
+
+.myGrid {
+  column-count: 1; /* 4 columns, each 25% width */
+  column-gap: 4%; /* No gap between columns */
+}
+
+.myCard {
+  width: 100%; /* Make images fill the column */
+  display: block; /* Remove inline spacing */
+  margin-bottom: 8vw; /* Ensure no extra gap */
+}
+
+/* // Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+  .myGrid {
+    column-count: 2;
+    column-gap: 6%; /* No gap between columns */
+  }
+  .myCard {
+    margin-bottom: 6vw; /* Ensure no extra gap */
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .myGrid {
+    column-count: 3; /* 4 columns, each 25% width */
+    column-gap: 4%; /* No gap between columns */
+  }
+  .myCard {
+    margin-bottom: 3vw; /* Ensure no extra gap */
+  }
+}
