@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
 import { comics } from "./comic-data";
+import "./Comics.css";
 
 const Comics: React.FC = () => {
   const [selectedComic, setSelectedComic] = useState<number | null>(null);
@@ -39,10 +40,10 @@ const Comics: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      <div className="w-full px-4 py-16 sm:px-6 lg:px-8">
+      <div className="w-full px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
           {comics.map((comic) => (
-            <div key={comic.id} className="flex flex-col">
+            <div key={comic.id} className="flex flex-col container">
               <h3 className="mb-4 text-xl font-semibold text-gray-900 text-center">
                 {comic.title}
               </h3>
