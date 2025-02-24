@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
+import logo from "/images/About/logo.PNG?url";
 import "./Navbar.css";
 
 const Navbar: React.FC = () => {
@@ -36,7 +37,7 @@ const Navbar: React.FC = () => {
             to="/"
             className="text-gray-900 hover:text-gray-600 font-medium tracking-wider md:text-md lg:text-md"
           >
-            HOME
+            <img src={logo} alt={"logo"} className="homeLogo" />
           </Link>
 
           {/* Desktop Menu */}
