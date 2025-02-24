@@ -3,6 +3,9 @@ import joe from "/images/About/joseph-perkins-profile.jpeg";
 import "./About.css";
 
 const About: React.FC = () => {
+  const user = "josephperkins1999";
+  const domain = "gmail.com";
+
   return (
     <div className=" bg-white">
       <div className="imageWrapper">
@@ -37,7 +40,11 @@ const About: React.FC = () => {
             >
               Instagram
             </a>{" "}
-            or get in touch if you’d like to collaborate.
+            or get in touch at{" "}
+            <a href={`mailto:${user}@${domain}`}>
+              {user}@{domain}
+            </a>{" "}
+            if you'd like to collaborate.
           </p>
         </div>
       </div>
