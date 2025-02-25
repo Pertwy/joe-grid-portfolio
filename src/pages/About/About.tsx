@@ -1,5 +1,5 @@
 import React from "react";
-import joe from "/images/About/joseph-perkins-profile.jpeg";
+import joe from "/images/About/joseph-perkins-profile.webp";
 import "./About.css";
 
 const About: React.FC = () => {
