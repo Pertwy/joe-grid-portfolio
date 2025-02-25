@@ -43,7 +43,7 @@ const Comics: React.FC = () => {
       <div className="w-full px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
           {comics.map((comic) => (
-            <div key={comic.id} className="flex flex-col container">
+            <div key={comic.id} className="flex flex-col comicContainer">
               <h3 className="mb-4 text-xl font-semibold text-gray-900 text-center">
                 {comic.title}
               </h3>
