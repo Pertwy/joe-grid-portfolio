@@ -2,13 +2,14 @@
   max-width: 90%;
   margin: auto;
   text-align: center;
+  margin-bottom: 3rem;
 }
 
 .text {
   font-family: "europa", sans-serif;
   font-weight: 300;
   font-style: normal;
-  font-size: 14px;
+  font-size: 17px;
   color: #333;
 }
 
@@ -21,13 +22,18 @@
   margin: auto;
 }
 
+.homeLogo:hover {
+  transition: opacity 0.2s ease-out;
+  opacity: 0.7;
+}
+
 /* // Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
   .textWrapper {
     max-width: 90%;
   }
   .text {
-    font-size: 16px;
+    font-size: 19px;
   }
 }
 

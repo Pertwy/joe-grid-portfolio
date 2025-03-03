@@ -3,6 +3,11 @@
   margin: auto;
 }
 
+.comic-item:hover {
+  transition: opacity 0.2s ease-out;
+  opacity: 0.8;
+}
+
 /* // Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
   .comicContainer {

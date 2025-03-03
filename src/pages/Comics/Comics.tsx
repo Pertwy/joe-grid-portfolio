@@ -48,7 +48,7 @@ const Comics: React.FC = () => {
                 {comic.title}
               </h3>
               <div
-                className="aspect-[3/4] w-full overflow-hidden rounded-lg bg-gray-100 cursor-pointer"
+                className="aspect-[3/4] w-full overflow-hidden rounded-lg bg-gray-100 cursor-pointer comic-item"
                 onClick={() => {
                   setSelectedComic(comic.id);
                   setCurrentPage(0);
