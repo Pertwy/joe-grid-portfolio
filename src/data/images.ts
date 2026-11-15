@@ -10,6 +10,7 @@ import monocle1 from "/images/Portfolio/monocle-1.webp";
 // import monocle2 from "/images/Portfolio/monocle-2.png";
 import pottery from "/images/Portfolio/pottery.webp";
 import dogs from "/images/Portfolio/dogs.webp";
+import oneTwoMany from "/images/Portfolio/one-two-many.webp";
 
 export interface ImageData {
   id: number;
@@ -25,24 +26,6 @@ export const images: ImageData[] = [
   //   subtitle: "Peaceful morning in the Alps",
   //   src: joe
   // },
-  {
-    id: 2,
-    title: "Unapologetic",
-    subtitle: "Crashing waves at sunset",
-    src: unapologetic,
-  },
-  {
-    id: 3,
-    title: "Unpublished",
-    subtitle: "Mystical woodland trail",
-    src: unpublished,
-  },
-  {
-    id: 4,
-    title: "stoolSketch",
-    subtitle: "Golden sands of the Sahara",
-    src: stoolSketch,
-  },
   {
     id: 5,
     title: "City Lights",
@@ -62,6 +45,12 @@ export const images: ImageData[] = [
     src: star3,
   },
   {
+    id: 12,
+    title: "1, 2, Many",
+    subtitle: "Wine and Cheese Club",
+    src: oneTwoMany,
+  },
+  {
     id: 8,
     title: "European Go Journal",
     subtitle: "Paradise shore",
@@ -78,6 +67,24 @@ export const images: ImageData[] = [
     title: "Canyon Vista",
     subtitle: "Dramatic rock formations",
     src: dogs,
+  },
+  {
+    id: 2,
+    title: "Unapologetic",
+    subtitle: "Crashing waves at sunset",
+    src: unapologetic,
+  },
+  {
+    id: 3,
+    title: "Unpublished",
+    subtitle: "Mystical woodland trail",
+    src: unpublished,
+  },
+  {
+    id: 4,
+    title: "stoolSketch",
+    subtitle: "Golden sands of the Sahara",
+    src: stoolSketch,
   },
   {
     id: 11,

@@ -7,7 +7,7 @@ const About: React.FC = () => {
   const domain = "gmail.com";
 
   return (
-    <div className=" bg-white">
+    <div>
       <div className="imageWrapper">
         <div className=" max-w-md mx-auto mb-12 overflow-hidden">
           <img
