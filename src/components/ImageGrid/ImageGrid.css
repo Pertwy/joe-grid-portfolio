@@ -18,8 +18,14 @@
 }
 
 .myGrid {
-  column-count: 1; /* 4 columns, each 25% width */
-  column-gap: 4%; /* No gap between columns */
+  display: flex;
+  align-items: flex-start;
+  gap: 4%;
+}
+
+.myColumn {
+  flex: 1;
+  min-width: 0;
 }
 
 .myCard {
@@ -31,8 +37,7 @@
 /* // Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
   .myGrid {
-    column-count: 2;
-    column-gap: 6%; /* No gap between columns */
+    gap: 6%;
   }
   .myCard {
     margin-bottom: 6vw; /* Ensure no extra gap */
@@ -42,8 +47,7 @@
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .myGrid {
-    column-count: 3; /* 4 columns, each 25% width */
-    column-gap: 4%; /* No gap between columns */
+    gap: 4%;
   }
   .myCard {
     margin-bottom: 3vw; /* Ensure no extra gap */
