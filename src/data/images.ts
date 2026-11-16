@@ -11,6 +11,8 @@ import monocle1 from "/images/Portfolio/monocle-1.webp";
 import pottery from "/images/Portfolio/pottery.webp";
 import dogs from "/images/Portfolio/dogs.webp";
 import oneTwoMany from "/images/Portfolio/one-two-many.webp";
+import britainsSecretPropagandaMachine from "/images/Portfolio/britains-secret-propaganda-machine.webp";
+import britishGoJournal from "/images/Portfolio/british-go-journal.webp";
 
 export interface ImageData {
   id: number;
@@ -26,6 +28,12 @@ export const images: ImageData[] = [
   //   subtitle: "Peaceful morning in the Alps",
   //   src: joe
   // },
+  {
+    id: 13,
+    title: "Britain's Secret Propaganda Machine",
+    subtitle: "Book cover",
+    src: britainsSecretPropagandaMachine,
+  },
   {
     id: 5,
     title: "City Lights",
@@ -55,6 +63,12 @@ export const images: ImageData[] = [
     title: "European Go Journal",
     subtitle: "Paradise shore",
     src: europeanGoJournal,
+  },
+  {
+    id: 14,
+    title: "British Go Journal",
+    subtitle: "Autumn 2016 cover",
+    src: britishGoJournal,
   },
   {
     id: 9,
