@@ -9,42 +9,36 @@ const About: React.FC = () => {
   return (
     <div>
       <div className="imageWrapper">
-        <div className=" max-w-md mx-auto mb-12 overflow-hidden">
+        <div className=" max-w-2xl mx-auto mb-12 overflow-hidden">
           <img
             src={joe}
-            alt="Portrait with a chihuahua"
+            alt="Joseph Perkins smiling outside a wooden barn"
             className="w-full h-full object-cover"
           />
         </div>
 
         <div className="textWrapper space-y-6 ">
           <p className="text">
-            I’m Joseph Perkins, an illustrator and comic artist from Birmingham,
-            born in 1999. I hold an Illustration Degree from Falmouth University
-            and now work across comics, editorial illustration, and children’s
-            books.
+            Hello, I’m Joe Perkins, an illustrator and software engineer based
+            in Manchester.
           </p>
 
           <p className="text">
-            My work has been published in Clunk Magazine and The European Go
-            Journal. I focus on creating clear, engaging visuals that
-            communicate ideas and stories effectively.
+            The silly cartoon business may seem jovial, but know I approach any
+            commission with military discipline and precision. I have been
+            enlisted to create children’s books, editorial illustrations and
+            book covers. I am always up for trying new things, so if you have an
+            idea that I haven’t previously made, please feel free to contact me
+            as I’m sure I could give it a go.
           </p>
 
           <p className="text">
-            You can see more of my work on{" "}
-            <a
-              href="https://www.instagram.com/perkins.ink"
-              target="_blank"
-              className="instaLinksta"
-            >
-              Instagram
-            </a>{" "}
-            or get in touch at{" "}
+            I’m currently open to commissions. If you’d like to work together,
+            I’d love to hear from you at{" "}
             <a href={`mailto:${user}@${domain}`}>
               {user}@{domain}
-            </a>{" "}
-            if you'd like to collaborate.
+            </a>
+            .
           </p>
         </div>
       </div>
