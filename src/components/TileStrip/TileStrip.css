@@ -1,0 +1,16 @@
+.tileStrip {
+  position: relative;
+  width: 100%;
+  background: #000;
+  overflow: hidden;
+}
+
+/* Sprites jump straight to their next square, with no transition. */
+.tileSprite {
+  position: absolute;
+  top: 0;
+  left: 0;
+  image-rendering: pixelated;
+  user-select: none;
+  pointer-events: none;
+}

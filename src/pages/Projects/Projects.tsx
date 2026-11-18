@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { ChevronLeft, ChevronRight, X } from "lucide-react";
+import { ArrowRight, ChevronLeft, ChevronRight, X } from "lucide-react";
 import { comics } from "./comic-data";
-import "./Comics.css";
+import TileStrip from "../../components/TileStrip/TileStrip";
+import "./Projects.css";
 
-const Comics: React.FC = () => {
+const TILE_GAME_URL = "https://tilegame-v2.onrender.com/";
+
+const Projects: React.FC = () => {
   const [selectedComic, setSelectedComic] = useState<number | null>(null);
   const [currentPage, setCurrentPage] = useState(0);
 
@@ -39,12 +42,30 @@ const Comics: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen pb-16">
+      <section className="tileGameIntro px-4">
+        <h2 className="projectTitle">Tile Game</h2>
+        <p className="projectText">
+          Play my old school multiplayer tile game
+          <a
+            href={TILE_GAME_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="projectArrow"
+            aria-label="Play Tile Game (opens in a new tab)"
+          >
+            <ArrowRight aria-hidden="true" />
+          </a>
+        </p>
+      </section>
+
+      <TileStrip />
+
       <div className="w-full px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 gap-8">
           {comics.map((comic) => (
             <div key={comic.id} className="flex flex-col comicContainer">
-              <h3 className="mb-4 text-xl font-semibold text-gray-900 text-center">
+              <h3 className="projectTitle mb-4">
                 {comic.title}
               </h3>
               <div
@@ -121,4 +142,4 @@ const Comics: React.FC = () => {
   );
 };
 
-export default Comics;
+export default Projects;

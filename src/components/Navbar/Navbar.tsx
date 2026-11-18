@@ -18,8 +18,8 @@ const Navbar: React.FC = () => {
       openNewTab: false,
     },
     {
-      title: "COMICS",
-      to: "/comics",
+      title: "PROJECTS",
+      to: "/projects",
       openNewTab: false,
     },
     {
@@ -45,6 +45,7 @@ const Navbar: React.FC = () => {
             {navItems.map((item) => {
               return (
                 <Link
+                  key={item.title}
                   to={item.to}
                   className="text-gray-900 hover:text-gray-600 font-medium tracking-wider md:text-md lg:text-md"
                   target={item.openNewTab ? "_blank" : ""}
@@ -76,6 +77,7 @@ const Navbar: React.FC = () => {
             {navItems.map((item) => {
               return (
                 <Link
+                  key={item.title}
                   to={item.to}
                   className="block py-2 text-gray-900 hover:text-gray-600 font-medium tracking-wider"
                   onClick={() => setIsOpen(false)}
