@@ -19,6 +19,8 @@ export interface ImageData {
   title: string;
   subtitle: string;
   src: string;
+  width: number;
+  height: number;
 }
 
 export const images: ImageData[] = [
@@ -33,78 +35,104 @@ export const images: ImageData[] = [
     title: "City Lights",
     subtitle: "Urban nightscape",
     src: star1,
+    width: 1100,
+    height: 1556,
   },
   {
     id: 13,
     title: "Britain's Secret Propaganda Machine",
     subtitle: "Book cover",
     src: britainsSecretPropagandaMachine,
+    width: 1100,
+    height: 1590,
   },
   {
     id: 8,
     title: "European Go Journal",
     subtitle: "Paradise shore",
     src: europeanGoJournal,
+    width: 1100,
+    height: 1565,
   },
   {
     id: 9,
     title: "Canyon Vista",
     subtitle: "Dramatic rock formations",
     src: monocle1,
+    width: 956,
+    height: 1294,
   },
   {
     id: 14,
     title: "British Go Journal",
     subtitle: "Autumn 2016 cover",
     src: britishGoJournal,
+    width: 865,
+    height: 864,
   },
   {
     id: 12,
     title: "1, 2, Many",
     subtitle: "Wine and Cheese Club",
     src: oneTwoMany,
+    width: 1100,
+    height: 1211,
   },
   {
     id: 7,
     title: "Arctic Aurora",
     subtitle: "Northern lights display",
     src: star3,
+    width: 1100,
+    height: 821,
   },
   {
     id: 4,
     title: "stoolSketch",
     subtitle: "Golden sands of the Sahara",
     src: stoolSketch,
+    width: 1043,
+    height: 1814,
   },
   {
     id: 10,
     title: "Canyon Vista",
     subtitle: "Dramatic rock formations",
     src: dogs,
+    width: 1080,
+    height: 1350,
   },
   {
     id: 11,
     title: "Canyon Vista",
     subtitle: "Dramatic rock formations",
     src: pottery,
+    width: 888,
+    height: 677,
   },
   {
     id: 3,
     title: "Unpublished",
     subtitle: "Mystical woodland trail",
     src: unpublished,
+    width: 800,
+    height: 1134,
   },
   {
     id: 6,
     title: "Autumn Colors",
     subtitle: "Fall foliage in the park",
     src: star2,
+    width: 1100,
+    height: 975,
   },
   {
     id: 2,
     title: "Unapologetic",
     subtitle: "Crashing waves at sunset",
     src: unapologetic,
+    width: 794,
+    height: 1134,
   },
   // {
   //   id: 2,

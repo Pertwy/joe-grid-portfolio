@@ -53,3 +53,23 @@
     margin-bottom: 3vw; /* Ensure no extra gap */
   }
 }
+
+/* Each image reserves its space from its width/height attributes, so the
+   grid doesn't jump around while images load. */
+.gridImage {
+  display: block;
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  transition: opacity 0.4s ease-out;
+}
+
+.gridImage--visible {
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gridImage {
+    transition: none;
+  }
+}
